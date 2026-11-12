@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FolliA v1.0 | Native Local AI Client</title>
+    <title>FolliA | Native Local AI Client for Android</title>
+    <meta name="description" content="FolliA is an open-source Android client to chat with your own Ollama models, on your local network or through a VPN. No third-party cloud, no tracking.">
+    <link rel="canonical" href="https://iamtheamn.github.io/FolliA-website/">
+    <link rel="alternate" hreflang="fr" href="https://iamtheamn.github.io/FolliA-website/index.fr.html">
+    <link rel="alternate" hreflang="en" href="https://iamtheamn.github.io/FolliA-website/">
+    <link rel="alternate" hreflang="x-default" href="https://iamtheamn.github.io/FolliA-website/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FolliA">
+    <meta property="og:title" content="FolliA | Native Local AI Client for Android">
+    <meta property="og:description" content="FolliA is an open-source Android client to chat with your own Ollama models, on your local network or through a VPN. No third-party cloud, no tracking.">
+    <meta property="og:url" content="https://iamtheamn.github.io/FolliA-website/">
+    <meta property="og:image" content="https://iamtheamn.github.io/FolliA-website/images/og-en.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preload" href="fonts/instrument-sans-400.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
     <div class="ambient-glow"></div>
 
     <div class="container">
         <nav class="navbar">
-            <div class="logo">FolliA <span>v1.0</span></div>
+            <div class="logo">FolliA <span>Android</span></div>
             <a href="index.fr.html" class="lang-switch-btn">
                 <span>🇫🇷</span> Français
             </a>
@@ -22,27 +42,41 @@
             <h1>Local and Native AI.<br>Uncompromising Privacy.</h1>
             <p>FolliA is a native Android client for LLMs, designed to interact with your own AI models. Fast, local, and secure: your data stays where it belongs.</p>
             <div class="hero-actions">
-                <a href="https://github.com/iamtheamn/FolliA/releases/download/v1.0/FolliA_v1.0.apk" class="btn btn-primary">Download APK</a>
+                <a href="https://github.com/iamtheamn/FolliA/releases/latest" class="btn btn-primary">Download APK</a>
                 <a href="https://github.com/iamtheamn/FolliA" class="btn btn-secondary">Source Code</a>
-                <a href="https://ko-fi.com/iamtheamn404" class="btn btn-kofi">☕ Support on Ko-fi</a>
             </div>
         </header>
+
+        <section class="screens" aria-label="App preview">
+            <figure class="screen screen-tablet">
+                <img src="images/screen-chat-tablet.webp" width="1363" height="780" alt="Chat screen on a tablet" loading="lazy" decoding="async">
+                <figcaption>Tablet · Chat</figcaption>
+            </figure>
+            <figure class="screen screen-phone">
+                <img src="images/screen-chat-phone.webp" width="540" height="1320" alt="Chat screen on a phone" loading="lazy" decoding="async">
+                <figcaption>Phone · Chat</figcaption>
+            </figure>
+            <figure class="screen screen-phone">
+                <img src="images/screen-settings-phone.webp" width="351" height="856" alt="Settings on a phone" loading="lazy" decoding="async">
+                <figcaption>Phone · Settings</figcaption>
+            </figure>
+        </section>
 
         <section class="bento-grid">
             <div class="bento-card">
                 <div class="card-icon">🛡️</div>
                 <h2>Total Sovereignty</h2>
-                <p>Connect your API keys or your own Ollama server via VPN. Zero intermediates, no tracking, absolute privacy.</p>
+                <p>Connect your own Ollama server, on your local network or through a VPN. Zero intermediaries, no tracking: your data stays with you.</p>
             </div>
             <div class="bento-card">
                 <div class="card-icon">🎙️</div>
                 <h2>Hands-Free Voice Mode</h2>
-                <p>Chat naturally with your AI using optimized audio logic that prevents echo feedback and infinite mic loops.</p>
+                <p>Chat naturally with your AI. Speech recognition runs entirely on your phone: no Google service, no connection.</p>
             </div>
             <div class="bento-card">
-                <div class="card-icon">🔄</div>
-                <h2>Background Persistence</h2>
-                <p>No more generation cut-offs. Switch between apps freely while inference continues to process smoothly in the background.</p>
+                <div class="card-icon">📌</div>
+                <h2>Organized Conversations</h2>
+                <p>Keep your whole history on the device: pin your important chats, rename them or delete them in one tap.</p>
             </div>
             <div class="bento-card">
                 <div class="card-icon">☁️</div>
@@ -56,8 +90,8 @@
             </div>
             <div class="bento-card">
                 <div class="card-icon">🚀</div>
-                <h2>Independent Updates</h2>
-                <p>Stay up to date without relying on centralized app stores with an autonomous pipeline fetching GitHub Releases.</p>
+                <h2>Free Installation</h2>
+                <p>Download the APK from GitHub: the app lets you know by itself when a new version is out. Coming soon to F-Droid and IzzyOnDroid.</p>
             </div>
         </section>
 
@@ -66,11 +100,11 @@
             <div class="arch-grid">
                 <div class="arch-step">
                     <h3>Private Inference</h3>
-                    <p>Run your models on your own hardware. The heavy cryptographic lifting stays entirely at home.</p>
+                    <p>Run your models on your own hardware. The heavy lifting of inference stays entirely at home.</p>
                 </div>
                 <div class="arch-step">
-                    <h3>Secure Tunnel</h3>
-                    <p>FolliA communicates directly and securely with your environment via local network or your VPN setup.</p>
+                    <h3>Direct Connection</h3>
+                    <p>FolliA talks directly to your machine over your local network. Away from home, use your VPN or an HTTPS address to encrypt the traffic.</p>
                 </div>
                 <div class="arch-step">
                     <h3>Zero Proxies</h3>
@@ -79,9 +113,32 @@
             </div>
         </section>
 
+        <section class="start" id="get-started">
+            <h2>Getting Started</h2>
+            <ol class="steps">
+                <li class="step">
+                    <span class="step-num">1</span>
+                    <h3>Install Ollama</h3>
+                    <p>On your computer or server, install <a href="https://ollama.com/download">Ollama</a>, then download a model, for example <code>ollama pull llama3.2</code>.</p>
+                </li>
+                <li class="step">
+                    <span class="step-num">2</span>
+                    <h3>Open it to your local network</h3>
+                    <p>By default, Ollama only accepts connections from the machine itself. Set the <code>OLLAMA_HOST=0.0.0.0</code> variable, restart Ollama and allow port <code>11434</code> in your firewall.</p>
+                </li>
+                <li class="step">
+                    <span class="step-num">3</span>
+                    <h3>Connect FolliA</h3>
+                    <p>In Settings &gt; Server, enter the machine's IP address and port <code>11434</code>, pick your model and start chatting.</p>
+                </li>
+            </ol>
+            <p class="start-note">Away from home, go through your VPN rather than exposing Ollama's port to the Internet: it has no authentication.</p>
+        </section>
+
         <footer>
             <div class="footer-content">
-                <p>© 2026 FolliA. Open-Source project developed by iamtheamn on GitHub.</p>
+                <p>© 2026 FolliA. Open-source project developed by <a href="https://github.com/iamtheamn">iamtheamn</a> on GitHub.</p>
+                <p class="footer-links"><a href="https://github.com/iamtheamn/FolliA">Source code</a> · <a href="privacy.html">Privacy Policy</a></p>
             </div>
         </footer>
     </div>

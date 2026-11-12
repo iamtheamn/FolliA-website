@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité | FolliA</title>
+    <meta name="description" content="Politique de confidentialité de l'application Android FolliA : aucune donnée collectée, vos conversations restent sur votre appareil et vos serveurs.">
+    <link rel="canonical" href="https://iamtheamn.github.io/FolliA-website/privacy.fr.html">
+    <link rel="alternate" hreflang="fr" href="https://iamtheamn.github.io/FolliA-website/privacy.fr.html">
+    <link rel="alternate" hreflang="en" href="https://iamtheamn.github.io/FolliA-website/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://iamtheamn.github.io/FolliA-website/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FolliA">
+    <meta property="og:title" content="Politique de confidentialité | FolliA">
+    <meta property="og:description" content="Politique de confidentialité de l'application Android FolliA : aucune donnée collectée, vos conversations restent sur votre appareil et vos serveurs.">
+    <meta property="og:url" content="https://iamtheamn.github.io/FolliA-website/privacy.fr.html">
+    <meta property="og:image" content="https://iamtheamn.github.io/FolliA-website/images/og-fr.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preload" href="fonts/instrument-sans-400.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.fr.html" class="logo logo-link">FolliA</a>
+            <a href="privacy.html" class="lang-switch-btn">
+                <span>🇺🇸</span> English
+            </a>
+        </nav>
+
+        <main class="legal">
+            <h1>Politique de confidentialité</h1>
+            <p class="legal-meta">Application Android FolliA (com.iamtheamn.aimen) · Dernière mise à jour : 12 novembre 2026</p>
+
+            <h2>En bref</h2>
+            <p>FolliA ne collecte aucune donnée. L'application n'a ni compte utilisateur, ni publicité, ni outil de mesure d'audience, et son développeur n'exploite aucun serveur : il ne reçoit donc jamais vos conversations, vos réglages ou vos identifiants.</p>
+
+            <h2>Données enregistrées sur votre appareil</h2>
+            <ul>
+                <li><strong>Conversations :</strong> vos messages et les réponses de vos modèles sont enregistrés dans une base de données locale, dans l'espace privé de l'application.</li>
+                <li><strong>Réglages d'interface :</strong> langue, thème, couleur et voix choisie.</li>
+                <li><strong>Paramètres de connexion :</strong> l'adresse et le port de votre serveur Ollama, ainsi que vos identifiants Nextcloud si vous les saisissez, sont chiffrés à l'aide de l'Android Keystore.</li>
+            </ul>
+            <p>Ces données sont exclues des sauvegardes automatiques d'Android et du transfert d'appareil à appareil.</p>
+
+            <h2>Données qui quittent votre appareil</h2>
+            <p>FolliA n'envoie des données qu'aux services que vous configurez ou activez vous-même :</p>
+            <ul>
+                <li><strong>Votre serveur Ollama :</strong> vos messages et l'historique de la conversation en cours sont envoyés à l'adresse que vous avez saisie, afin d'obtenir une réponse. Ce serveur est le vôtre ; FolliA ne passe par aucun intermédiaire. Si vous n'utilisez pas d'adresse en « https:// », cet échange n'est pas chiffré par l'application : utilisez-le sur un réseau de confiance ou à travers un VPN.</li>
+                <li><strong>Votre serveur Nextcloud (facultatif) :</strong> si vous activez la synchronisation, une copie de vos conversations est envoyée en HTTPS vers le serveur Nextcloud que vous avez indiqué.</li>
+                <li><strong>Modèles de dictée (facultatif) :</strong> si vous téléchargez un modèle de langue depuis Réglages &gt; Voix, FolliA le récupère une seule fois sur le site du projet open source Vosk (alphacephei.com). Ce site voit alors votre adresse IP ; aucune autre information n'est transmise.</li>
+                <li><strong>Lecture à voix haute (facultatif) :</strong> le texte des réponses est transmis au moteur de synthèse vocale de votre appareil.</li>
+                <li><strong>Vérification des mises à jour :</strong> si l'application a été installée à partir d'un APK GitHub (et non depuis F-Droid ou IzzyOnDroid), elle interroge GitHub au démarrage pour savoir si une nouvelle version existe. GitHub voit alors votre adresse IP, comme pour toute visite d'un site web. Aucune autre information n'est transmise.</li>
+            </ul>
+
+            <h2>Dictée vocale</h2>
+            <p>La reconnaissance vocale fonctionne entièrement sur votre appareil, grâce au moteur open source Vosk intégré à l'application. Votre voix n'est jamais envoyée sur Internet, ni enregistrée : seul le texte reconnu est placé dans le champ de saisie.</p>
+
+            <h2>Autorisations demandées</h2>
+            <ul>
+                <li><strong>Internet :</strong> pour joindre votre serveur Ollama et, si vous l'activez, votre serveur Nextcloud.</li>
+                <li><strong>Microphone :</strong> uniquement pour la dictée vocale, quand vous la lancez. L'application fonctionne sans cette autorisation.</li>
+            </ul>
+
+            <h2>Supprimer vos données</h2>
+            <p>Vous pouvez supprimer chaque conversation depuis l'application. Désinstaller FolliA, ou effacer ses données dans les paramètres d'Android, supprime tout ce qu'elle a enregistré sur l'appareil. Les copies présentes sur votre serveur Nextcloud ou conservées par votre serveur Ollama restent sous votre contrôle et se suppriment depuis ces serveurs.</p>
+
+            <h2>Enfants</h2>
+            <p>FolliA ne s'adresse pas aux enfants et ne collecte sciemment aucune donnée les concernant, comme pour tout autre utilisateur.</p>
+
+            <h2>Ce site web</h2>
+            <p>Ce site n'utilise ni cookies, ni outil de mesure d'audience, ni ressource externe : ses polices sont hébergées avec lui. Il est hébergé par GitHub Pages, qui reçoit donc votre adresse IP lorsque vous le consultez, comme tout hébergeur web.</p>
+
+            <h2>Modifications</h2>
+            <p>Si cette politique évolue, la nouvelle version sera publiée sur cette page avec sa date de mise à jour.</p>
+
+            <h2>Contact</h2>
+            <p>Responsable : Aymen HAMMACHE. Pour toute question sur cette politique : <a href="mailto:contact@aymenhammache.fr">contact@aymenhammache.fr</a></p>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2026 FolliA. Projet open source développé par <a href="https://github.com/iamtheamn">iamtheamn</a> sur GitHub.</p>
+                <p class="footer-links"><a href="index.fr.html">Accueil</a> · <a href="https://github.com/iamtheamn/FolliA">Code source</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

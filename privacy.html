@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FolliA</title>
+    <meta name="description" content="Privacy policy of the FolliA Android app: no data collected, your conversations stay on your device and your own servers.">
+    <link rel="canonical" href="https://iamtheamn.github.io/FolliA-website/privacy.html">
+    <link rel="alternate" hreflang="fr" href="https://iamtheamn.github.io/FolliA-website/privacy.fr.html">
+    <link rel="alternate" hreflang="en" href="https://iamtheamn.github.io/FolliA-website/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://iamtheamn.github.io/FolliA-website/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FolliA">
+    <meta property="og:title" content="Privacy Policy | FolliA">
+    <meta property="og:description" content="Privacy policy of the FolliA Android app: no data collected, your conversations stay on your device and your own servers.">
+    <meta property="og:url" content="https://iamtheamn.github.io/FolliA-website/privacy.html">
+    <meta property="og:image" content="https://iamtheamn.github.io/FolliA-website/images/og-en.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preload" href="fonts/instrument-sans-400.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="logo logo-link">FolliA</a>
+            <a href="privacy.fr.html" class="lang-switch-btn">
+                <span>🇫🇷</span> Français
+            </a>
+        </nav>
+
+        <main class="legal">
+            <h1>Privacy Policy</h1>
+            <p class="legal-meta">FolliA Android app (com.iamtheamn.aimen) · Last updated: November 12, 2026</p>
+
+            <h2>In short</h2>
+            <p>FolliA collects no data. The app has no user accounts, no ads and no analytics, and its developer runs no server: he never receives your conversations, your settings or your credentials.</p>
+
+            <h2>Data stored on your device</h2>
+            <ul>
+                <li><strong>Conversations:</strong> your messages and your models' replies are saved in a local database, inside the app's private storage.</li>
+                <li><strong>Interface settings:</strong> language, theme, color and chosen voice.</li>
+                <li><strong>Connection settings:</strong> the address and port of your Ollama server, and your Nextcloud credentials if you enter them, are encrypted using the Android Keystore.</li>
+            </ul>
+            <p>This data is excluded from Android's automatic backups and from device-to-device transfer.</p>
+
+            <h2>Data that leaves your device</h2>
+            <p>FolliA only sends data to services that you set up or turn on yourself:</p>
+            <ul>
+                <li><strong>Your Ollama server:</strong> your messages and the history of the current conversation are sent to the address you entered, in order to get a reply. That server is yours; FolliA uses no intermediary. Unless you use an "https://" address, the app does not encrypt this exchange: use it on a trusted network or through a VPN.</li>
+                <li><strong>Your Nextcloud server (optional):</strong> if you turn on synchronization, a copy of your conversations is sent over HTTPS to the Nextcloud server you specified.</li>
+                <li><strong>Dictation models (optional):</strong> if you download a language model from Settings &gt; Voice, FolliA fetches it once from the website of the open-source Vosk project (alphacephei.com). That website then sees your IP address; no other information is sent.</li>
+                <li><strong>Read aloud (optional):</strong> the text of replies is passed to your device's text-to-speech engine.</li>
+                <li><strong>Update check:</strong> if the app was installed from a GitHub APK (rather than from F-Droid or IzzyOnDroid), it queries GitHub at startup to find out whether a new version exists. GitHub then sees your IP address, as with any website visit. No other information is sent.</li>
+            </ul>
+
+            <h2>Voice dictation</h2>
+            <p>Speech recognition runs entirely on your device, using the open-source Vosk engine built into the app. Your voice is never sent over the Internet or recorded: only the recognized text is placed in the input field.</p>
+
+            <h2>Permissions requested</h2>
+            <ul>
+                <li><strong>Internet:</strong> to reach your Ollama server and, if you turn it on, your Nextcloud server.</li>
+                <li><strong>Microphone:</strong> only for voice dictation, when you start it. The app works without this permission.</li>
+            </ul>
+
+            <h2>Deleting your data</h2>
+            <p>You can delete each conversation from within the app. Uninstalling FolliA, or clearing its data in Android settings, removes everything it stored on the device. Copies held on your Nextcloud server or kept by your Ollama server remain under your control and are deleted from those servers.</p>
+
+            <h2>Children</h2>
+            <p>FolliA is not directed at children and does not knowingly collect any data about them, as for any other user.</p>
+
+            <h2>This website</h2>
+            <p>This website uses no cookies, no analytics and no external resources: its fonts are hosted alongside it. It is hosted on GitHub Pages, which therefore receives your IP address when you visit it, like any web host.</p>
+
+            <h2>Changes</h2>
+            <p>If this policy changes, the new version will be published on this page with its update date.</p>
+
+            <h2>Contact</h2>
+            <p>Data controller: Aymen HAMMACHE. For any question about this policy: <a href="mailto:contact@aymenhammache.fr">contact@aymenhammache.fr</a></p>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2026 FolliA. Open-source project developed by <a href="https://github.com/iamtheamn">iamtheamn</a> on GitHub.</p>
+                <p class="footer-links"><a href="index.html">Home</a> · <a href="https://github.com/iamtheamn/FolliA">Source code</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
